@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Smartphones",
+        "category": "smartphones",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp"
+        }
+    }, 
+    
+    {
+        "name": "Mobile-accessories",
+        "category": "mobile-accessories",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/mobile-accessories/amazon-echo-plus/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/mobile-accessories/tv-studio-camera-pedestal/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Mens Clothing",
+        "category": "mens-shirts",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Women Clothing",
+        "category": "womens-dresses",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/thumbnail.webp"
+        }
+    },
+    
+    {
+        "name": "Beauty",
+        "category": "beauty",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Laptops",
+        "category": "laptops",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/laptops/apple-macbook-pro-14-inch-space-grey/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/laptops/asus-zenbook-pro-dual-screen-laptop/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/laptops/lenovo-yoga-920/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/laptops/new-dell-xps-13-9300-laptop/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Groceries",
+        "category": "groceries",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/groceries/cooking-oil/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/groceries/green-bell-pepper/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/groceries/ice-cream/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/groceries/milk/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Kitchen",
+        "category": "kitchen-accessories",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/kitchen-accessories/electric-stove/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fine-mesh-strainer/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/kitchen-accessories/fork/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/kitchen-accessories/lunch-box/thumbnail.webp"
+        }
+    },
+    
+    {
+        "name": "Furniture",
+        "category": "furniture",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Fragrances",
+        "category": "fragrances",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Home-Decoration",
+        "category": "home-decoration",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/home-decoration/decoration-swing/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/home-decoration/family-tree-photo-frame/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/home-decoration/plant-pot/thumbnail.webp"
+        }
+    },
+    
+    
+    {
+        "name": "Skincare",
+        "category": "skin-care",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/3.webp"
+        }
+    },
+    {
+        "name": "Womens Bag",
+        "category": "womens-bags",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/womens-bags/blue-women's-handbag/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/womens-bags/prada-women-bag/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/womens-bags/white-faux-leather-backpack/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Tablet",
+        "category": "tablets",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-white/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/tablets/samsung-galaxy-tab-s8-plus-grey/4.webp"
+        }
+    },
+    {
+        "name": "Footwear",
+        "category": "shoes",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/thumbnail.webp"
+        }
+    },
+    {
+        "name": "Watches",
+        "category": "watches",
+        "image": {
+            "img1":"https://cdn.dummyjson.com/product-images/mens-watches/brown-leather-belt-watch/thumbnail.webp",
+            "img2": "https://cdn.dummyjson.com/product-images/womens-watches/rolex-datejust-women/thumbnail.webp",
+            "img3": "https://cdn.dummyjson.com/product-images/mens-watches/longines-master-collection/thumbnail.webp",
+            "img4": "https://cdn.dummyjson.com/product-images/womens-watches/iwc-ingenieur-automatic-steel/thumbnail.webp"
+        }
+    }
+]

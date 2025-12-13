@@ -1,0 +1,54 @@
+[
+    
+    {
+        "name":"Laptop",
+        "category":"laptops"
+    },
+    
+    {
+        "name":"Tablets",
+        "category":"tablets"
+    },
+    {
+        "name":"Fragrances",
+        "category":"fragrances"
+    },
+    {
+        "name":"Beauty",
+        "category":"beauty"
+    },
+    {
+        "name":"Mens Shirts",
+        "category":"mens-shirts"
+    },
+    {
+        "name":"Womens dresses",
+        "category":"womens-dresses"
+    },
+    {
+        "name":"Smartphone",
+        "category":"smartphones"
+    },
+    {
+        "name":"Footwear",
+        "category":"shoes"
+    },
+    {
+        "name":"Furniture",
+        "category":"furniture"
+    },
+    
+    {
+        "name":"Groceries",
+        "category": "groceries"
+    },
+    {
+        "name":"Sunglasses",
+        "category": "sunglasses"
+    },
+    {
+        "name":"sports",
+        "category":"sports-accessories"
+    }
+   
+]
