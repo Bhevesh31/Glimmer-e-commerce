@@ -23,10 +23,8 @@ const Login = () => {
         setTimeout(() => {
           firebase.setNotRegistered(true)
         }, 10000);
-        console.log("loging a user");
         
         const result = await firebase.signinUserWithEmailAndPass(email, password);
-       console.log("logged in", result);
        
     }
 

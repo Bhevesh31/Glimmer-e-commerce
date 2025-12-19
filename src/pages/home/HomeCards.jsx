@@ -10,7 +10,6 @@ const HomeCards = ({category, name, images}) => {
     <Link to="/products">
     <div onClick={()=>{
       filterByCategory(category)
-      console.log(category);
       
       }} className='h-83  relative rounded-xl shadow-[0_0_11px_rgba(0,0,0,0.3)] hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] hover:scale-105  transition-all duration-300 bg-gray-50 hover:bg-white flex flex-col items-center cursor-pointer mt-5 justify-center gap-2'>
         <h1 className='text-xl absolute left-8 top-1.5 font-semibold mt-2'>{name}</h1>

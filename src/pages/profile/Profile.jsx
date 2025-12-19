@@ -5,13 +5,7 @@ import { Link } from 'react-router-dom';
 const Profile = () => {
   const firebase = useFirebase();
 
-  if( (firebase.user ===null)){
-    console.log("no user");
-    
-  }
-  else{
-    console.log(firebase.user);
-  }
+  
   
   return (
     <div className='h-[80vh]'>

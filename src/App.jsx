@@ -21,13 +21,6 @@ const App = () => {
 
   
 
-
-  // useEffect(() => {
-  // fetch(`https://dummyjson.com/products?limit=200`)
-  //   .then(res => res.json())
-  //   .then(data =>console.log(data.products));  
-  // }, []);
-
   return (
     <BrowserRouter>
     <div className='min-h-screen flex flex-col '>

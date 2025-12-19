@@ -10,10 +10,6 @@ const ProductCard = ({details}) => {
 
   const  {allProducts, filterByCategory, filteredProducts, clickProd, addToCart} = useContext(ProductDataContext)
 
-    const titleClick =(id)=>{
-        console.log(id);
-        
-    }
     
   return (
     
