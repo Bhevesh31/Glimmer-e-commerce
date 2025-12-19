@@ -33,7 +33,7 @@ const Navbar = () => {
     
 
   return (
-    <div className='py-4 sticky top-0 z-50 flex bg-green-200'>
+    <div className='py-4 sticky top-0 z-50 flex items-center bg-green-200'>
         <div id='logo' className='flex-1 h-full flex items-center justify-center'>
             <div className='text-cyan-950 ml-8 text-4xl'>
                 <Link to="/">
@@ -50,14 +50,14 @@ const Navbar = () => {
         <div  id='search' className='flex-3 flex items-center'>
             <div className='w-[92%] flex items-center px- ml-6 border relative rounded-xl'>
                 
-                <input ref={inputRef} value={searchedItem} onChange={(e)=>setSearchedItem(e.target.value)} className='w-[92%] ml-2 pl-2 py-[7.5px] outline-none  placeholder:text-gray-700 placeholder:text-[18px]' type="text" placeholder='Search for products' />
+                <input ref={inputRef} value={searchedItem} onChange={(e)=>setSearchedItem(e.target.value)} className='w-[92%] ml-2 pl-2 py-[9.5px] outline-none  placeholder:text-gray-700 placeholder:text-[18px]' type="text" placeholder='Search for products' />
                 
                 
                 {
                     searchedItem===""?
                         <div onClick={()=>{ 
                             handleEmpty();
-                        }}  className='border-l py-2.5 cursor-pointer hover:shadow-[0_0_11px_rgba(0,0,0,0.3)] px-4'><Search size={20} strokeWidth={1.75} /></div>
+                        }}  className='border-l py-3.25 px-5 cursor-pointer hover:shadow-[0_0_11px_rgba(0,0,0,0.3)] '><Search size={20} strokeWidth={1.75} /></div>
                         :
                         <Link to= "products">
                 
@@ -67,7 +67,7 @@ const Navbar = () => {
                                     top:0,
                                     behavior:"smooth",
                                 });
-                            }}  className='border-l py-2.5 cursor-pointer hover:shadow-[0_0_11px_rgba(0,0,0,0.3)] px-4'><Search size={20} strokeWidth={1.75} /></div>
+                            }}  className='border-l py-3.25 px-5 cursor-pointer hover:shadow-[0_0_11px_rgba(0,0,0,0.3)] '><Search size={20} strokeWidth={1.75} /></div>
                         </Link>
 
                 }

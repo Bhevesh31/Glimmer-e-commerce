@@ -55,7 +55,7 @@ Firebase Authentication is used for:
 
 ## 🌐 Live Demo
 
-🚧 Deployment coming soon
+https://glimmer-e-commerce.vercel.app/
 
 ---
 
