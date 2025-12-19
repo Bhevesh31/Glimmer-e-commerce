@@ -39,7 +39,7 @@ const ProductDetail = () => {
 
 
 
-      <div className='flex-3 pl-2 overflow-y-scroll'>
+      <div id='prodDetail' className='flex-3 pl-2 overflow-y-scroll'>
         <div id='details' className='mt-12'>
           <h1 className='font-semibold text-lg'>{selectedProduct[0].title}</h1>
           <h2 className='mb-2'>{selectedProduct[0].description}</h2>

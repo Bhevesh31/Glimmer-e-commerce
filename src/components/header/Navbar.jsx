@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
 
-        <div id='navRight' className='flex-3 flex items-center justify-start gap-12 pr-3'>
+        <div id='navRight' className='flex-3 flex items-center justify-evenly gap-4 pr-3'>
 
             {
                 !(firebase.isLoggedIn) ?<Link to="login">
