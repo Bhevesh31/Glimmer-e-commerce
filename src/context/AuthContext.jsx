@@ -6,7 +6,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, on
 export const UserContext = createContext();
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: "AIzaSyANdYWDYbRCVyepSPH2yed_Y39iJzmhh6s",
   authDomain: "e-commerce-app-1feb8.firebaseapp.com",
   projectId: "e-commerce-app-1feb8",
   storageBucket: "e-commerce-app-1feb8.firebasestorage.app",
