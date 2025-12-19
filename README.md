@@ -42,6 +42,12 @@ Firebase Authentication is used for:
 
 ---
 
+## 🌐 Live Demo
+
+https://glimmer-e-commerce.vercel.app/
+
+---
+
 ## 📸 Screenshots
 
 ![Home Screenshot](./screenshots/home.png)
@@ -53,11 +59,7 @@ Firebase Authentication is used for:
 ---
 
 
-## 🌐 Live Demo
 
-https://glimmer-e-commerce.vercel.app/
-
----
 
 
 
