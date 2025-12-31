@@ -11,9 +11,9 @@ const CategoryBar = () => {
   return (
     
     <div>
-      <div className='flex-2 bg-[#f8d04a] flex items-center px-7 py-2 justify-evenly text-[17px] '>
+      <div className='flex-2 bg-[#f8d04a] overflow-x-scroll lg:overflow-auto flex gap-5 lg:gap-0 lg:flex items-center px-4 lg:px-7 py-2 justify-evenly text-[17px] '>
         <Link to="products">
-          <h1 onClick={()=>setFilteredProducts(allProducts)} className='font-semibold mt-1 hover:text-orange-800 border-transparent hover:border-orange-800 border-b-2'>All Products</h1>
+          <h1 onClick={()=>setFilteredProducts(allProducts)} className='font-semibold whitespace-nowrap mt-1 hover:text-orange-800 border-transparent hover:border-orange-800 border-b-2'>All Products</h1>
         </Link>
         {
             categoryData.map((elem,idx)=>{

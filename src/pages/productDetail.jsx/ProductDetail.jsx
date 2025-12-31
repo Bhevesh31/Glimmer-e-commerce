@@ -18,9 +18,9 @@ const ProductDetail = () => {
 
   return (
      (selectedProduct.length>0)?
-    <div className='flex h-screen'>
-      <div className='flex-2 borde  flex'>
-        <div className=' ml-5 mt-6 flex flex-col gap-2'>
+    <div className='flex lg:h-screen flex-col lg:flex-row'>
+      <div className='flex-2 borde flex'>
+        <div className=' ml-5 mt-6 hidden md:flex lg:flex flex-col gap-2'>
           {
             selectedProduct[0].images.map((elem, idx)=>{
               
@@ -30,8 +30,8 @@ const ProductDetail = () => {
          
           
         </div>
-        <div className='flex justify-center '>
-          <img className='h-100 w-110 mt-5' src={selectedProduct[0].images[index]} alt="" />
+        <div className='w-full lg:w-auto flex justify-center'>
+          <img className='h-70 lg:h-100 w-70 lg:w-110 mt-5' src={selectedProduct[0].images[index]} alt="" />
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const ProductDetail = () => {
 
 
 
-      <div id='prodDetail' className='flex-3 pl-2 overflow-y-scroll'>
+      <div id='prodDetail' className='flex-3 px-3 lg:px-2 lg:overflow-y-scroll'>
         <div id='details' className='mt-12'>
           <h1 className='font-semibold text-lg'>{selectedProduct[0].title}</h1>
           <h2 className='mb-2'>{selectedProduct[0].description}</h2>
@@ -48,10 +48,10 @@ const ProductDetail = () => {
         </div>
 
 
-        <div id="buttons" className='flex flex-col text-white text-lg gap-7 mt-7 '>
-          <button onClick={()=>addToCart(selectedProduct[0].id)} className='bg-teal-700 font-semibold px-3 py-[13px] w-[65%] shadow-lg cursor-pointer hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] active:scale-95'>ADD TO CART</button>
-          <Link to="/checkout">
-            <button onClick={()=>checkoutProduct(selectedProduct)} className='bg-teal-700 font-semibold px-3 py-[13px] w-[65%] shadow-lg cursor-pointer hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] active:scale-95'>BUY NOW</button>
+        <div id="buttons" className='flex flex-col items-center text-white text-lg gap-7 mt-7 '>
+          <button onClick={()=>addToCart(selectedProduct[0].id)} className='bg-teal-700 font-semibold px-3 py-2.5 lg:py-[13px] w-full md:w-[70%] lg:w-[65%] shadow-lg cursor-pointer hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] active:scale-95'>ADD TO CART</button>
+          <Link to="/checkout" className='w-full flex justify-center'>
+            <button onClick={()=>checkoutProduct(selectedProduct)} className='bg-teal-700 font-semibold px-3 py-2.5 lg:py-[13px] w-full md:w-[70%] lg:w-[65%] shadow-lg cursor-pointer hover:shadow-[0_0_15px_rgba(0,0,0,0.3)] active:scale-95'>BUY NOW</button>
           </Link>
           
         </div>

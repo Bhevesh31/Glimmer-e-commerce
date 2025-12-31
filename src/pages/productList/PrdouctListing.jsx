@@ -62,27 +62,27 @@ const PrdouctListing = () => {
   }
 
   return (
-    <div className='grid grid-cols-[1fr]'>
+    <div className='lg:grid lg:grid-cols-[1fr]'>
       <div className=''>
-        <div id='sorting' className='flex gap-9 mt-4 pl-14 border-b border-neutral-400 '>
-          <h1 className='font-bold'>Sort by</h1>
+        <div id='sorting' className=' flex gap-9 mt-4 pl-2 pb-3 lg:pb-0 lg:pl-14 border-b border-neutral-400 overflow-y-hidden lg:overflow-y-auto'>
+          <h1 className='font-bold whitespace-nowrap'>Sort by</h1>
           <span onClick={()=>sortProducts("popularity")} className='font-light cursor-pointer'>Popularity</span>
-          <span onClick={()=>sortProducts("lowToHigh")} className='font-light cursor-pointer'>Price--Low to High</span>
-          <span onClick={()=>sortProducts("highToLow")} className='font-light cursor-pointer'>Price--High to Low</span>
-          <span onClick={()=>sortProducts("discount")} className='font-light cursor-pointer'>Discount</span>
+          <span onClick={()=>sortProducts("lowToHigh")} className='font-light cursor-pointer whitespace-nowrap'>Price--Low to High</span>
+          <span onClick={()=>sortProducts("highToLow")} className='font-light cursor-pointer whitespace-nowrap'>Price--High to Low</span>
+          <span onClick={()=>sortProducts("discount")} className='font-light cursor-pointer whitespace-nowrap'>Discount</span>
           
           
         </div>
         {filteredProducts.length>100 && <h1 className='text-4xl mt-7 ml-8'>All products</h1>}
 
-        <div id="list" className='grid grid-cols-[1fr_1fr_1fr_1fr] gap-6.5 mt-7 px-8'>
+        <div id="list" className='grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr_1fr] gap-6.5 mt-7 px-8'>
           {
             currentItems.map((elem, idx)=>{
               return <ProductCard key={idx} details={elem}/>
             })
           }    
         </div>
-        <div className='text-white flex justify-center gap-2 mt-15'>
+        <div className='text-white hidden lg:flex justify-center gap-2 mt-15'>
           <button onClick={handlePrev} disabled={currentPage===1} className='px-3 py-2 rounded bg-gray-800  disabled:bg-gray-500 disabled:cursor-not-allowed disabled:opacity-50'>Previous</button>
           {Array.from({length: totalPages}, (_, index)=>(
             <button onClick={()=>handlePageClick(index+1)} className={`px-3 py-2 rounded ${currentPage===index+1 ? "bg-blue-600 text-white border-blue-600":"bg-gray-800 text-white hover:bg-gray-600 border-gray-600"}`}>{index+1}</button>

@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div>
+      <div className='hidden md:block lg:block'>
         <h1 className='text-lg font-bold mb-1'>Connect with Us</h1>
         <div className='text-neutral-400 leading-7 '>
           <p className='hover:underline'>Facebook</p>
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div>
+      <div className='hidden lg:block'>
         <h1 className='text-lg font-bold mb-1'>Let Us Help You</h1>
         <div className='text-neutral-400 leading-7 '>
           <p className='hover:underline'>Your Account</p>

@@ -32,7 +32,7 @@ const Carousel = () => {
 
 
   return (
-    <div className='h-68 w-full mt-5 bg-gray-600'>
+    <div className='h-68 w-full mt-5 bg-gray-600 relative'>
         <div>
           <button onClick={handlePre} className='absolute top-[38%] left-4 bg-white/80 hover:bg-white duration-300 p-3 backdrop-blur-md hover:scale-110 transition-transform text-gray-700 rounded-full shadow-lg px-2 py-2 cursor-pointer text-4xl font-extrabold'>{"<"}</button>
         </div>

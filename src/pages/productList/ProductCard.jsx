@@ -13,8 +13,8 @@ const ProductCard = ({details}) => {
     
   return (
     
-    <div className=' bg-neutral-300 px-3 flex flex-col mt-  ml- pt-2 shadow-[0_0_11px_rgba(0,0,0,0.2)] pb-4'>
-              <img className='h-50 mt-2 mb-4 ' src={details.thumbnail} alt="" />
+    <div className=' bg-neutral-300 px-3 flex flex-col items-center pt-2 shadow-[0_0_11px_rgba(0,0,0,0.2)] pb-4'>
+              <img className='h-50 w-50 lg:w-auto mt-2 mb-4 ' src={details.thumbnail} alt="" />
               <div>
                 <Link to="/product">
                 <h1 onClick={()=>clickProd(details.id)} className='cursor-pointer text-lg font-semibold hover:text-amber-700 duration-100'>{details.title} <br /><span className='leading-5 text-md font-normal'>{details.description.length>50? details.description.substring(0,60)+"..." : details.description}</span> </h1>

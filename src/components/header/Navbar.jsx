@@ -33,9 +33,9 @@ const Navbar = () => {
     
 
   return (
-    <div className='py-4 sticky top-0 z-50 flex items-center bg-green-200'>
-        <div id='logo' className='flex-1 h-full flex items-center justify-center'>
-            <div className='text-cyan-950 ml-8 text-4xl'>
+    <div className='py-4 md:sticky lg:sticky top-0 z-50 flex flex-col lg:flex-row items-center bg-green-200'>
+        <div id='logo' className='flex-1 h-full w-full lg:w-auto px-6 lg:px-0 flex items-center justify-between  lg:justify-center mb-2 lg:mb-0'>
+            <div className='text-cyan-950 ml-0 lg:ml-8 text-4xl '>
                 <Link to="/">
                 <h1 onClick={()=>{
                     window.scrollTo({
@@ -46,11 +46,78 @@ const Navbar = () => {
                 </Link>
                 
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className='lg:hidden flex items-center'>
+                <Link to="cart" >
+                <div onClick={()=>{
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth",
+                         });
+                }} className='flex items-center gap-2 relative text-lg'>
+                    <ShoppingCart size={26} strokeWidth={1.75} />
+                    <div className='h-4.5 w-4.5 bg-red-500 text-white rounded-full flex justify-center items-center absolute right-1 -top-[5px] text-sm font-bold'>{shoppingCart.length}</div>
+                    <span className=''></span>
+                </div>
+                 </Link>
+
+                 {
+                !(firebase.isLoggedIn) ?<Link to="login">
+                <div onClick={()=>{
+                    window.scrollTo({
+                        top:0,
+                        behavior:"smooth",
+                    });
+                    }} className='flex items-center gap-2 ml-5 relative text-lg'>
+                    <CircleUserRound size={26} strokeWidth={1.75} />
+                    
+                    
+                    </div>
+                    </Link>
+                 :
+                    <Link to="profile">
+                    <div onClick={()=>{
+                        window.scrollTo({
+                            top:0,
+                            behavior:"smooth",
+                        });
+                    }} className='flex items-center gap-2 ml-5 relative text-lg'>
+                        <CircleUserRound size={25} strokeWidth={1.75} />
+                        
+                   
+                    </div>
+                    </Link>
+             }
+            </div>
+
+
+
+
+
+
+
+
+
+
         </div>
-        <div  id='search' className='flex-3 flex items-center'>
-            <div className='w-[92%] flex items-center px- ml-6 border relative rounded-xl'>
+        <div  id='search' className='flex-3 w-full lg:w-auto flex items-center justify-center lg:justify-start'>
+            <div className='w-[90%] lg:w-[92%] flex items-center ml-0 lg:ml-6 border relative rounded-xl'>
                 
-                <input ref={inputRef} value={searchedItem} onChange={(e)=>setSearchedItem(e.target.value)} className='w-[92%] ml-2 pl-2 py-[9px] outline-none  placeholder:text-gray-700 placeholder:text-[18px]' type="text" placeholder='Search for products' />
+                <input ref={inputRef} value={searchedItem} onChange={(e)=>setSearchedItem(e.target.value)} className='w-[92%] ml-2 pl-2 py-1.5 lg:py-[9px] outline-none  placeholder:text-gray-700 placeholder:text-[18px]' type="text" placeholder='Search for products' />
                 
                 
                 {
@@ -93,7 +160,7 @@ const Navbar = () => {
         </div>
 
 
-        <div id='navRight' className='flex-3 flex items-center justify-evenly gap-4 pr-3'>
+        <div id='navRight' className='flex-3 hidden lg:flex items-center justify-evenly gap-4 pr-0 lg:pr-3'>
 
             {
                 !(firebase.isLoggedIn) ?<Link to="login">

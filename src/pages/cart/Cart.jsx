@@ -23,20 +23,20 @@ const Cart = () => {
   
 
   return (
-    <div className='flex gap-8  p-8 h-[80vh]'>
-      <div className=' flex-2 bg-neutral-300 border border-neutral-400  flex flex-col items-center'>
+    <div className='flex  w-full flex-col lg:flex-row gap-8 p-4 pt-6 lg:p-8 lg:h-[80vh]'>
+      <div className=' flex-2  bg-neutral-300 border border-neutral-400  flex flex-col items-center'>
        <div className='w-full flex justify-start'>
         <h1 className='text-3xl mt-4 ml-5'>Shopping Cart</h1>
         </div>
 
-      <div id='cartItem' className='w-full flex flex-col items-center mt-6 overflow-scroll'>
+      <div id='cartItem' className=' lg:w-full flex flex-col items-center mt-6 overflow-x-scroll'>
 
         {
           shoppingCart.length>0? (
             (shoppingCart || []).map((elem, idx)=>{
             
            return(
-            <div key={idx} className='bg-white w-[80%] flex shadow-[0_0_15px_rgba(0,0,0,0.3)]  pt-2 pb-3 mt-1.5 border border-neutral-500 rounded-xl'>
+            <div key={idx} className='bg-white w-[92%] lg:w-[80%] flex shadow-[0_0_15px_rgba(0,0,0,0.3)]  pt-2 pb-3 mt-1.5 border border-neutral-500 rounded-xl'>
               <div>
                 <img className='h-35 w-35' src={elem.thumbnail} alt="" />
               </div>
@@ -45,11 +45,11 @@ const Cart = () => {
                 {/* <h1>{elem.description.length>50? elem.description.substring(0,60)+"..." : elem.description}</h1> */}
                 <p className='text-xl my-0.5'>₹{Math.floor((elem.price)*80).toLocaleString("en-IN")}.00</p>
                 <p className='text-sm'>Sold by <span className='text-base'>{elem.sku}</span></p>
-                <p className='mt-5 font-semibold'><span onClick={()=>removeItem(elem.cartId)} className='hover:text-amber-600 cursor-pointer hover:scale-105'>SAVE FOR LATER</span><span onClick={()=>removeItem(elem.cartId)} className='hover:text-amber-600 ml-7 cursor-pointer hover:scale-105'>REMOVE</span></p>
+                <p className='mt-5 font-semibold'><span onClick={()=>removeItem(elem.cartId)} className='hover:text-amber-600 cursor-pointer whitespace-nowrap hover:scale-105'>SAVE FOR LATER</span><span onClick={()=>removeItem(elem.cartId)} className='hover:text-amber-600 ml-5 mr-2 lg:ml-7 cursor-pointer hover:scale-105'>REMOVE</span></p>
               </div>
             </div>
           ) 
-        })):<h1 className='mt-25 text-xl'>Your shopping cart is empty...</h1>
+        })):<h1 className='mt-8 mb-15 lg:mt-25 lg:mb-0 text-xl'>Your shopping cart is empty...</h1>
         }
       </div>
 
@@ -67,9 +67,9 @@ const Cart = () => {
           <div className='flex justify-start gap-4'><p className='flex-2'>Platform fee</p><span className='flex-2'>{(shoppingCart.length>0) ? "₹ 20" : "₹ 0"}</span></div>
           <div className='flex justify-start gap-4 text-2xl mt-2'><p className='flex-2'>Total Amount</p><span className='flex-2'>₹{(shoppingCart.length>0)? (Math.floor(total*80)+20).toLocaleString("en-IN") :0} </span></div>
         </div>
-        <div className=' mt-8 flex flex-col items-center '>
+        <div className=' mt-8 flex flex-col items-center'>
           <Link className='w-[70%]' to={shoppingCart.length>0? "/checkout":"#"}>
-            <button onClick={()=>checkoutProduct(shoppingCart)} className='py-2 w-full px-4  text-lg rounded-2xl bg-amber-400  cursor-pointer'>Proceed to Buy</button>
+            <button onClick={()=>checkoutProduct(shoppingCart)} className='py-2 w-full px-4 mb-4 lg:mb-0 text-lg rounded-2xl bg-amber-400 cursor-pointer'>Proceed to Buy</button>
           </Link>
           {shoppingCart.length<1 && <p className='text-sm text-center text-red-600 mt-2'>Add items to proceed further</p>}
         </div>

@@ -11,7 +11,7 @@ const CategoryBarContent = ({category, name}) => {
     <Link to="/products">
     <div  className='font-semibold mt-1 hover:text-orange-800 border-transparent hover:border-orange-800 border-b-2' >
       
-      <span onClick={()=>filterByCategory(category)}>{name}</span>
+      <span className='whitespace-nowrap' onClick={()=>filterByCategory(category)}>{name}</span>
     </div>
     </Link>
   )
