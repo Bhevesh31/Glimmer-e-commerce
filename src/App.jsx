@@ -3,7 +3,7 @@ import Navbar from './components/header/Navbar'
 
 import Footer from './components/footer/Footer'
 import Home from './pages/home/Home'
-import { BrowserRouter, Routes,Route } from 'react-router-dom'
+import { BrowserRouter, Routes,Route, useNavigate } from 'react-router-dom'
 import {  } from 'lucide-react'
 import PrdouctListing from './pages/productList/PrdouctListing'
 import ProductDetail from './pages/productDetail.jsx/ProductDetail'
@@ -18,11 +18,15 @@ import OrderPlaced from './pages/orders/OrderPlaced'
 
 const App = () => {
 
+  const navigate = useNavigate();
 
+
+    useEffect(()=>{
+      navigate("/")
+    },[])
   
 
   return (
-    <BrowserRouter>
     <div className='min-h-screen flex flex-col '>
       <Navbar/>     
       <CategoryBar/>
@@ -44,7 +48,7 @@ const App = () => {
           
       <Footer/>
     </div>
-    </BrowserRouter>
+
   )
 }
 

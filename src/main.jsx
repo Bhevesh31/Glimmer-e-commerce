@@ -4,11 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import ProductContext from './context/ProductContext.jsx'
 import AuthContext from './context/AuthContext.jsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
   <ProductContext>
     <AuthContext>
+      <BrowserRouter>
         <App />
+      </BrowserRouter>
+        
     </AuthContext>
     
   </ProductContext>
